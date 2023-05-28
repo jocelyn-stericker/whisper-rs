@@ -30,3 +30,8 @@ test-with-tiny-model = []
 
 [package.metadata.docs.rs]
 features = ["simd"]
+
+[[example]]
+name = "cdylib"
+path = "examples/cdylib.rs"
+crate-type = ["cdylib"]
