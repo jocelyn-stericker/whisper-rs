@@ -104,8 +104,6 @@ fn main() {
     #[cfg(feature = "opencl")]
     cmd.arg("-DWHISPER_CLBLAST=ON");
 
-    cmd.arg("-DCMAKE_POSITION_INDEPENDENT_CODE=ON");
-
     let code = cmd
         .status()
         .expect("Failed to run `cmake` (is CMake installed?)");
