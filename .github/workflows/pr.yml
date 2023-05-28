@@ -73,4 +73,4 @@ jobs:
           toolchain: ${{ matrix.rust-version }}
 
       - name: Check build
-        run: cargo build --verbose
+        run: cargo build --verbose --all-targets
